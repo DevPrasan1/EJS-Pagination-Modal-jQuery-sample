@@ -6,7 +6,7 @@ var app = express();
 app.use(express.static(path.join(__dirname,'public')));
 app.set("views engine",'ejs');
 app.set("views",path.join(__dirname,'views'));
-const PORT=8000;
+const PORT=process.env.PORT || 8000;
 
 const itemsList={
 	itemA:["A-1","A-2","A-3","A-4","A-5","A-6","A-7","A-8","A-9","A-10","A-11","A-12","A-13","A-14","A-15","A-16","A-17","A-18","A-19"],
