@@ -1,0 +1,31 @@
+<div class="panel-right">
+	<div class="alertMsg" id="alertMsg"><h2> Please first enter a value in Items/Page.</h2></div>
+	<div id="items" hidden>
+		<div id="itemContainerA">
+			<% for(var i=0;i<list.itemA.length;i++){ %>
+			<div class="box">
+				<div class="left round">
+					<%=i+1%>
+				</div>
+				<div class="left content">
+					<%= list.itemA[i]%>
+				</div>
+			</div>
+			<% } %>
+		</div>
+		<div id="itemContainerB" hidden>
+			<% for(var i=0;i<list.itemB.length;i++){ %>
+			<div class="box">
+				<div class="left round">
+					<%=i+1%>
+				</div>
+				<div class="left content">
+					<%= list.itemB[i]%>
+				</div>
+			</div>
+			<% } %>
+		</div>
+		<div class="holder">
+		</div>
+	</div>
+</div>
